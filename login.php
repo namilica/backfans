@@ -10,7 +10,7 @@ $provider = new DiscordAuth([
 	'urlResourceOwnerDetails' => 'https://discord.com/api/users/@me',
 	'scopeSeparator' => ' '	,
 	'scopes' => ['identify', 'email'],
-	'redirectUri' => 'http://pitocat.xyz:8535/login.php',
+	'redirectUri' => 'http://backfans.pitocat.xyz/login.php',
 ]);
 session_start();
 if (!isset($_GET['code'])) {
