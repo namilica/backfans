@@ -3,7 +3,6 @@ require 'vendor/autoload.php';
 require 'DiscordAuth.php';
 require 'DiscordResourceOwner.php';
 $provider = new DiscordAuth([
-//$provider = new \Wohali\OAuth2\Client\Provider\Discord([
 	'clientId' => '1047047643496460308',
 	'clientSecret' => 'mt72oBg6UcUObjPBWgn250NZBJ3I2KUT',
 	'urlAuthorize'            => 'https://discord.com/api/oauth2/authorize',
@@ -11,7 +10,7 @@ $provider = new DiscordAuth([
 	'urlResourceOwnerDetails' => 'https://discord.com/api/users/@me',
 	'scopeSeparator' => ' '	,
 	'scopes' => ['identify', 'email'],
-	'redirectUri' => 'http://localhost:8535/login.php',
+	'redirectUri' => 'http://pitocat.xyz:8535/login.php',
 ]);
 session_start();
 if (!isset($_GET['code'])) {
@@ -32,7 +31,7 @@ if (!isset($_GET['code'])) {
 	$accessToken = $provider->getAccessToken('authorization_code', ['code'=>$_GET['code']]);
 	$resourceOwner = $provider->getResourceOwner($accessToken);
 	$_SESSION['user']=$resourceOwner->toArray();
-	if (in_array($_SESSION['user']['username'], [])) {
+	if (in_array($_SESSION['user']['id'], ['1047046791624929321','486538035069190145','501622295173922816','702126820891557969','614372301550387211','396141306931445763'])) {
 		$_SESSION['login'] = true;
 		header("Location: /");
 	} else {
