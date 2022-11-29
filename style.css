@@ -1,0 +1,80 @@
+html, body{
+	min-height: 100vh;
+}
+body {
+	font-family: Sans-Serif;
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+/* Main layout */
+body > header, body > footer {
+	box-sizing: border-box;
+	padding: 0 1rem;
+	width: 100vw;
+}
+
+body > main {
+	max-width:640px;
+	background: aliceblue;
+}
+
+body > header {
+	background: #c4b1c4;
+}
+
+body > footer {
+	background: #333;
+}
+
+/* Navigation Time */
+nav > ul{
+	display:inline-flex;
+	flex-direction: row;
+	list-style: none;
+	padding: 0; /* remov space from start and end */
+}
+nav ul a{
+	display:inline-block;
+	padding:5px;
+	color: white;
+	text-decoration: none;
+}
+body > header a{
+	color: #333;
+}
+/* Body thing */
+body > main .backup {
+	display: block;
+	font-size: x-large;
+	font-weight: bolder;
+	padding: 1.2rem;
+	width: max-content;
+	margin: 1rem auto ;
+	background-color: #745474;
+	color: white;
+	border-radius: 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+body> header{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav > span {
+	display: inline;
+}
+.login {
+	background-color:#c83944;
+	padding: 1rem;
+	font-weight: blod;
+	display:inline-block;
+	text-decoration: none;
+	color:white;
+	border-radius: 1rem;
+	width: 3rem;
+	text-align:center;
+}
