@@ -7,12 +7,13 @@ session_start(); ?>
 <link rel="stylesheet" href="/style.css">
 <header>
 	<nav><ul>
-		<li><a href="#">Home</a>
+		<li><a href="/">Home</a>
 		<li><a href="#">Links</a>
 		<li><a href="#">About</a>
+		<li><a href="https://github.com/namilica/backfans">github</a>
 	</ul></nav>
 <?php	if(isset($_SESSION['login'])){ ?>
-	<span>Welcome <?= $_SESSION["user"]["username"] ?>
+	<span>Welcome <?= var_dump($_SESSION["user"]) ?>
 	<a href="/logout.php" class="login">logout</a>
 	</span>
 <?php } else { ?>
@@ -31,8 +32,9 @@ session_start(); ?>
 </main>
 <footer>
 	<nav><ul>
-		<li><a href="#">Home</a>
+		<li><a href="/">Home</a>
 		<li><a href="#">Links</a>
 		<li><a href="#">About</a>
+		<li><a href="https://github.com/namilica/backfans">github</a>
 	</ul></nav>
 </footer>
