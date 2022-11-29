@@ -13,7 +13,7 @@ session_start(); ?>
 		<li><a href="https://github.com/namilica/backfans">github</a>
 	</ul></nav>
 <?php	if(isset($_SESSION['login'])){ ?>
-	<span>Welcome <?= var_dump($_SESSION["user"]) ?>
+	<span>Welcome <?= $_SESSION["user"]["username"] ?>
 	<a href="/logout.php" class="login">logout</a>
 	</span>
 <?php } else { ?>
