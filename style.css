@@ -19,7 +19,8 @@ body > header, body > footer {
 body > main {
 	max-width:640px;
 	background: aliceblue;
-	border-radius: 3rem;
+	border-radius: 1rem;
+	padding: 1rem;
 }
 
 body > header {
