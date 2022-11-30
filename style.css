@@ -78,3 +78,11 @@ nav > span {
 	width: 3rem;
 	text-align:center;
 }
+header > span {
+	display: inline-flex;
+	align-items: center;
+}
+header > span > img {
+	border-radius: 33%;
+	margin-inline: 0.5rem;
+}

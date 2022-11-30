@@ -13,7 +13,9 @@ session_start(); ?>
 		<li><a href="https://github.com/namilica/backfans">github</a>
 	</ul></nav>
 <?php	if(isset($_SESSION['login'])){ ?>
-	<span>Welcome <?= $_SESSION["user"]["username"] ?>
+	<span>
+	<span>Welcome <?= $_SESSION["user"]["username"] ?></span>
+	<img src="https://cdn.discordapp.com/avatars/<?= $_SESSION['user']['id'] ?>/<?= $_SESSION['user']['avatar'] ?>.png?size=256" width="64px" alt="avatar"/>
 	<a href="/logout.php" class="login">logout</a>
 	</span>
 <?php } else { ?>
