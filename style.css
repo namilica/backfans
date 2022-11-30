@@ -19,6 +19,7 @@ body > header, body > footer {
 body > main {
 	max-width:640px;
 	background: aliceblue;
+	border-radius: 3rem;
 }
 
 body > header {
@@ -75,14 +76,15 @@ nav > span {
 	text-decoration: none;
 	color:white;
 	border-radius: 1rem;
-	width: 3rem;
 	text-align:center;
+	box-sizing:border-box;
 }
 header > span {
 	display: inline-flex;
 	align-items: center;
 }
 header > span > img {
-	border-radius: 33%;
+	border-radius: 50%;
 	margin-inline: 0.5rem;
+	width: 3rem;
 }

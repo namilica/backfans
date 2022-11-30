@@ -3,6 +3,7 @@ session_start(); ?>
 <!DOCTYPE html>
 <title>BackFans - the only service for backup fans</title>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" href="/big.png">
 <link rel="stylesheet" href="/style.css">
 <header>
@@ -15,7 +16,7 @@ session_start(); ?>
 <?php	if(isset($_SESSION['login'])){ ?>
 	<span>
 	<span>Welcome <?= $_SESSION["user"]["username"] ?></span>
-	<img src="https://cdn.discordapp.com/avatars/<?= $_SESSION['user']['id'] ?>/<?= $_SESSION['user']['avatar'] ?>.png?size=256" width="64px" alt="avatar"/>
+	<img src="https://cdn.discordapp.com/avatars/<?= $_SESSION['user']['id'] ?>/<?= $_SESSION['user']['avatar'] ?>.png?size=256" alt="avatar"/>
 	<a href="/logout.php" class="login">logout</a>
 	</span>
 <?php } else { ?>
